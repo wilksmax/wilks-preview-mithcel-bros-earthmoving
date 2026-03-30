@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-/* Accent strip on hover */
+/* Colour strip on hover — odd cards primary, even cards accent */
 .service-card::before {
   content: '';
   position: absolute;
@@ -25,6 +25,7 @@
   transform-origin: left;
   transition: transform .3s ease;
 }
+.service-card:nth-child(even)::before { background: var(--color-accent); }
 .service-card:hover::before { transform: scaleX(1); }
 
 .service-card__icon {
@@ -64,7 +65,7 @@
 }
 
 .service-card__tick {
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: .85rem;
   flex-shrink: 0;
 }

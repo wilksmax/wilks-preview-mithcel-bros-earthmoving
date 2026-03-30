@@ -7,6 +7,8 @@ const root = document.documentElement
 const map = {
   '--color-primary':     t.primaryColor   || '#f06422',
   '--color-primary-dk':  t.primaryDark    || '#c04d0f',
+  '--color-accent':      t.accentColor    || t.primaryColor   || '#f06422',
+  '--color-accent-dk':   t.accentDark     || t.primaryDark    || '#c04d0f',
   '--color-bg':          t.bgColor        || '#0c0c0c',
   '--color-surface':     t.surfaceColor   || '#141414',
   '--color-surface-alt': t.surfaceAlt     || '#1a1a1a',

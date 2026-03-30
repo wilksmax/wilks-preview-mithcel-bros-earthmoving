@@ -25,6 +25,11 @@
   transform: translateY(-3px);
 }
 
+/* Even items hover with accent colour */
+.why-us__item:nth-child(even):hover {
+  border-color: var(--color-accent);
+}
+
 .why-us__icon {
   font-size: 2rem;
   line-height: 1;
